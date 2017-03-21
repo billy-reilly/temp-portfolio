@@ -1,0 +1,54 @@
+@import "variables";
+@import "textLink";
+@import "xlink";
+
+*{
+  color:#ffffff;
+  font-family: 'Source Code Pro', monospace;
+  font-size:$textHeight;
+}
+.container-fluid{
+  position:relative;
+  min-height:100vh;
+  background-color:#000e0c;
+  padding:0;
+  overflow-x:hidden;
+}
+.col-lg-6{
+  padding:6vw 6vw 15px 6vw;
+  opacity:0.92;
+  max-width:100%;
+  overflow-x:hidden;
+  margin:0;
+}
+.title{
+  font-weight:600;
+  opacity:1;
+}
+.about{
+  padding-right:5vw;
+}
+.tempMessage{
+  font-size:10vh;
+}
+.tempMessageSmall{
+  color:#727272;
+}
+.spaceHolder{
+  height:25vh;
+}
+.contact{
+  position:absolute;
+  display:block;
+  text-align:center;
+  bottom:0;
+  width:100%;
+  padding:2vw;
+  height:25vh;
+}
+.email{
+  font-size:3.2vh;
+}
+.socialLinks{
+  margin:20px;
+}

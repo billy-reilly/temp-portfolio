@@ -1,0 +1,46 @@
+@import "variables";
+
+@mixin transform($x){
+  -webkit-transform:$x;
+  -moz-transform:$x;
+  transform:$x;
+}
+.xlink{
+  color:$textColor;
+  position:relative;
+  text-decoration:none;
+  opacity:1;
+  z-index:5;
+  &:hover, &:active{
+    color:$textColor;
+    text-decoration:none;
+    font-weight:500;
+    &::before, &::after{
+      height:$textHeight/8;
+    }
+    &::before{
+      @include transform(rotate(45deg));
+    }
+    &::after{
+      @include transform(rotate(-45deg));
+    }
+  }
+  &::before, &::after{
+    position: absolute;
+	  width: 100%;
+	  left: 0;
+	  top: 50%;
+	  height: $textHeight/10;
+	  margin-top: 0;
+	  background: $xcolor;
+	  content: '';
+    z-index:-1;
+    transition: transform 0.3s, height 0.3s;
+  }
+  &::before{
+    @include transform(translateY(-$textHeight*4/5));
+  }
+  &::after{
+    @include transform(translateY($textHeight*4/5));
+  }
+}
