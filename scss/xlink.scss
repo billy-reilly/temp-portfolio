@@ -1,22 +1,20 @@
 @import "variables";
 
 @mixin transform($x){
-  -webkit-transform:$x;
-  -moz-transform:$x;
-  transform:$x;
+  -webkit-transform: $x;
+  -moz-transform: $x;
+  transform: $x;
 }
 .xlink{
-  color:$textColor;
-  position:relative;
-  text-decoration:none;
-  opacity:1;
-  z-index:5;
+  color: $textColor;
+  position: relative;
+  text-decoration: none;
+  z-index: 5;
   &:hover, &:active{
-    color:$textColor;
-    text-decoration:none;
-    font-weight:500;
+    color: $textColor;
+    text-decoration: none;
     &::before, &::after{
-      height:$textHeight/8;
+      height: $textHeight/8;
     }
     &::before{
       @include transform(rotate(45deg));
