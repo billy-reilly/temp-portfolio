@@ -28,6 +28,12 @@
 .about{
   padding-right:5vw;
 }
+.tech-list {
+  padding-left: 25px;
+  &> li {
+    list-style-type: none;
+  }
+}
 .tempMessage{
   font-size:10vh;
 }

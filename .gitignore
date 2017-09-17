@@ -1,0 +1,9 @@
+#ignore the icons directory:
+icons/**
+
+#ignore css:
+css/**
+
+#ignore bootstap and jquery scripts:
+bootstrap.min.js
+jquery-3.2.1.min.js
