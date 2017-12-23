@@ -1,3 +1,4 @@
 #ignore css:
 css/**
 !css/main.css
+!css/bootstrap.min.css
