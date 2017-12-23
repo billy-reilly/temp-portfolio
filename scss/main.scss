@@ -30,7 +30,7 @@
 }
 .tech-list {
   padding-left: 25px;
-  &> li {
+  li {
     list-style-type: none;
   }
 }
@@ -41,7 +41,7 @@
   color:#727272;
 }
 .spaceHolder{
-  height:25vh;
+  height:22.5vh;
 }
 .contact{
   position:absolute;
@@ -50,7 +50,7 @@
   bottom:0;
   width:100%;
   padding:2vw;
-  height:25vh;
+  height:22.5vh;
 }
 .email{
   font-size:3.2vh;
